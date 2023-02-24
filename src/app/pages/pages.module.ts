@@ -3,22 +3,21 @@ import { CommonModule } from '@angular/common';
 import { AlumnosComponent } from './alumnos/alumnos.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { MaestrosComponent } from './maestros/maestros.component';
-
-
-
+import { PrincipalComponent } from './principal/principal.component';
+import { SharedModule } from '../shared/shared.module';
 @NgModule({
   declarations: [
     AlumnosComponent,
     NoticiasComponent,
-    MaestrosComponent
+    MaestrosComponent,
+    PrincipalComponent,
   ],
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule, SharedModule],
   exports: [
     AlumnosComponent,
     MaestrosComponent,
-    NoticiasComponent
-  ]
+    NoticiasComponent,
+    PrincipalComponent,
+  ],
 })
-export class PagesModule { }
+export class PagesModule {}
