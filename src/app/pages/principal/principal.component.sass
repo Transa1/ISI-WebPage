@@ -1,0 +1,78 @@
+// Variable del alto del banner y las imagenes
+$banner_height: 10em
+
+hr
+    width: 16rem
+    height: 0.5em
+    background-color: yellow
+    margin: 10px 0
+
+.containerNews
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+
+.midSection
+    display: grid
+    grid-template-columns: 65% 1fr
+
+.containerTechNews
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+.clubSection
+    display: grid
+    grid-template-columns: 45% 1fr
+    margin-top: 1em
+
+    p
+        margin-top: 0.5em
+
+#contentSlider
+    width: 100%
+    height: $banner_height
+    background-color: red
+    overflow: hidden
+
+    #slider
+        width: 100%
+        display: grid
+        grid-template-columns: 100% 100% 100%
+        animation: move 15s infinite    
+    #img1
+        width: 100%
+        height:  $banner_height
+        background-image: url(https://as2.ftcdn.net/v2/jpg/04/16/85/49/1000_F_416854970_2hlz9mkmiVwEXJlilqHIo2kp7RvcD2A6.jpg)
+        background-size: cover
+        background-position: center
+    #img3
+        width: 100%
+        height:  $banner_height
+        background-image: url(https://as2.ftcdn.net/v2/jpg/04/16/85/49/1000_F_416854970_2hlz9mkmiVwEXJlilqHIo2kp7RvcD2A6.jpg)
+        background-size: cover
+        background-position: center
+    #img2
+        width: 100%
+        height:  $banner_height
+        background-image: url(https://as2.ftcdn.net/v2/jpg/04/16/85/49/1000_F_416854970_2hlz9mkmiVwEXJlilqHIo2kp7RvcD2A6.jpg)
+        background-size: cover
+        background-position: center
+
+    @keyframes move
+        30%
+            margin-left: 0%
+        33%
+            margin-left: -100%
+        63%
+            margin-left: -100%
+        66%
+            margin-left: -200%
+        97%
+            margin-left: -200%
+        100%
+            margin-left: 0%
+
+#divitionBanner
+    width: 100%
+    height: 1em
+    background-color: yellow
+    margin: 0
