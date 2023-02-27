@@ -6,7 +6,12 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./navbar.component.sass']
 })
 
+
 export class NavbarComponent {
+  
+  printMsg() {
+    console.log('Icon Clicked');
+  }
   isNavbarScrolled = false ;
 
   @HostListener('window:scroll', [])
