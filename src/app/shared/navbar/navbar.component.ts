@@ -6,14 +6,19 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./navbar.component.sass']
 })
 
+
 export class NavbarComponent {
+  
+  printMsg() {
+    console.log('Icon Clicked');
+  }
   isNavbarScrolled = false ;
 
   @HostListener('window:scroll', [])
   onWindowScroll = () => {
     console.log(document.documentElement.scrollTop);
 
-    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
      this.isNavbarScrolled=true;
     } else {
       this.isNavbarScrolled= false;
