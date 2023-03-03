@@ -18,7 +18,7 @@ export class NavbarComponent {
   onWindowScroll = () => {
     console.log(document.documentElement.scrollTop);
 
-    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
      this.isNavbarScrolled=true;
     } else {
       this.isNavbarScrolled= false;
