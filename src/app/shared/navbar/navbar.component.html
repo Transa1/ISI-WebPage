@@ -1,18 +1,39 @@
-<nav [class.isNavbarScrolled]="isNavbarScrolled">
-  <div  id="nav" class="fixed-top navbar-expand-sm bg-dark">
-    <ul class="navbar menu">
-          <li class="nav">
-            <a class="nav-link" href="#noticias">Noticias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#alumnos">Alumnos</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#maestros">Maestros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#general">General</a>
-          </li>
-      </ul>
+<nav class="fixed-top navbar-expand-lg" >
+  <div [class.isNavbarScrolled]="isNavbarScrolled">
+    <div class="primario-menu">
+      <a class="navbar-logo" href="https://www.unison.mx/">
+        <img src="/assets/unilogo.png" class="img-uni" >
+        <a class="navbar-logo" href="#home">
+          <img src="/assets/isiisiisi.jpg" class="img-isi" >
+        </a>    
+      </a>
+     
+  
+      <div class="navbar-menu">
+        <div  id="nav">
+              <ul class="navbar-menu">
+                  <li class="nav">
+                    <a class="nav-link active" href="#noticias">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#alumnos">Alumnos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#maestros">Maestros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#general">General</a>
+                  </li>
+              </ul>
+              
+        </div>  
+      </div>    
+    </div>
 
+    <div class="secundario-menu">
+      <form class="nosubmit">
+        <input class="nosubmit" placeholder="Buscar" >
+      </form>
+    </div>
   </div>
 </nav>
