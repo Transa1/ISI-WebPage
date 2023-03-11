@@ -8,135 +8,84 @@
 </div>
 <hr id="divitionBanner" />
 
-<div class="container">
-  <div>
-    <h2 class="title">Ultimas noticias</h2>
-    <hr class="yellowLine" />
-    <div class="bigImgSection">
-      <img
-        src="https://w7.pngwing.com/pngs/972/337/png-transparent-pepe-the-frog-illustration-tribal-wars-2-video-game-internet-sad-pepe.png"
-        alt=""
-      />
-      <div id="midSectionText">
-        <h2>Blablabla</h2>
-        <p>
-          Pepe the Frog es un popular meme de internet. Es una rana
-          antropomórfica verde con un cuerpo humanoide. Pepe se originó en un
-          cómic de Matt Furie llamado Boy's Club. Se convirtió en un meme de
-          Internet cuando su popularidad creció constantemente en Myspace, Gaia
-          Online y 4chan en 2008
-        </p>
+<div [ngSwitch]="currentBreakpoint">
+  <div class="container" *ngSwitchCase="Breakpoints.Large">
+    <div>
+      <h2 class="title">Ultimas noticias</h2>
+      <hr class="yellowLine" />
+      <div class="bigImgSection">
+        <img
+          src="https://w7.pngwing.com/pngs/972/337/png-transparent-pepe-the-frog-illustration-tribal-wars-2-video-game-internet-sad-pepe.png"
+          alt=""
+        />
+        <div id="midSectionText">
+          <h2>Blablabla</h2>
+          <p>
+            Pepe the Frog es un popular meme de internet. Es una rana
+            antropomórfica verde con un cuerpo humanoide. Pepe se originó en un
+            cómic de Matt Furie llamado Boy's Club. Se convirtió en un meme de
+            Internet cuando su popularidad creció constantemente en Myspace,
+            Gaia Online y 4chan en 2008
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="midSection">
+      <div class="clubes">
+        <h2 class="title">Nuestros clubes</h2>
+        <hr class="yellowLine" />
+        <div class="clubSection">
+          <img src="https://via.placeholder.com/150x150" alt="" />
+          <div class="clubSectionText">
+            <h3>CSI</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              illum dolorum hic quis aperiam
+            </p>
+          </div>
+        </div>
+        <div class="clubSection">
+          <img src="https://via.placeholder.com/150x150" alt="" />
+          <div class="clubSectionText">
+            <h3>CSTI</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              illum dolorum hic quis aperiam
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="aSection">
+        <h2 class="title">Nuestros clubes</h2>
+        <hr class="yellowLine" />
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+          voluptatum quos temporibus blanditiis magnam deleniti, natus aliquid.
+          Odit, quisquam nihil in temporibus aspernatur totam reiciendis amet,
+          quis inventore, numquam iusto. Debitis tempore, illo ratione optio,
+          rerum pariatur vitae in eveniet voluptates voluptatum quaerat
+          accusantium beatae molestiae error iste corrupti libero omnis
+          voluptatibus cum ea, reiciendis veritatis unde minima. Distinctio,
+          ipsam. A atque rerum reiciendis consequatur cumque iste dicta
+          praesentium, asperiores impedit, autem alias earum veniam quam
+          repudiandae fuga tempore veritatis. Molestias perspiciatis id iste
+          tempore sequi sunt distinctio, eaque autem. Impedit eligendi sit animi
+          unde ducimus repellat provident iste laudantium ut atque? Ipsa
+          distinctio odit nihil veritatis dolores? Delectus nisi omnis
+          perspiciatis corrupti maxime doloremque explicabo, quia deserunt
+          molestiae sed? Quia, dolorem eum unde rerum eos porro quidem earum
+          nemo praesentium fuga impedit aliquam est error sapiente architecto,
+          repellendus, recusandae fugiat ad repudiandae asperiores! Aut harum
+          ullam alias dolorum vero.
+        </h1>
       </div>
     </div>
   </div>
-
-  <div class="midSection">
-    <div class="clubes">
-      <h2 class="title">Nuestros clubes</h2>
-      <hr class="yellowLine" />
-      <div class="clubSection">
-        <img src="https://via.placeholder.com/150x150" alt="" />
-        <div class="clubSectionText">
-          <h3>CSI</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illum
-            dolorum hic quis aperiam
-          </p>
-        </div>
-      </div>
-      <div class="clubSection">
-        <img src="https://via.placeholder.com/150x150" alt="" />
-        <div class="clubSectionText">
-          <h3>CSTI</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illum
-            dolorum hic quis aperiam
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="aSection">
-      <h2 class="title">Nuestros clubes</h2>
-      <hr class="yellowLine" />
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatum
-        quos temporibus blanditiis magnam deleniti, natus aliquid. Odit,
-        quisquam nihil in temporibus aspernatur totam reiciendis amet, quis
-        inventore, numquam iusto. Debitis tempore, illo ratione optio, rerum
-        pariatur vitae in eveniet voluptates voluptatum quaerat accusantium
-        beatae molestiae error iste corrupti libero omnis voluptatibus cum ea,
-        reiciendis veritatis unde minima. Distinctio, ipsam. A atque rerum
-        reiciendis consequatur cumque iste dicta praesentium, asperiores
-        impedit, autem alias earum veniam quam repudiandae fuga tempore
-        veritatis. Molestias perspiciatis id iste tempore sequi sunt distinctio,
-        eaque autem. Impedit eligendi sit animi unde ducimus repellat provident
-        iste laudantium ut atque? Ipsa distinctio odit nihil veritatis dolores?
-        Delectus nisi omnis perspiciatis corrupti maxime doloremque explicabo,
-        quia deserunt molestiae sed? Quia, dolorem eum unde rerum eos porro
-        quidem earum nemo praesentium fuga impedit aliquam est error sapiente
-        architecto, repellendus, recusandae fugiat ad repudiandae asperiores!
-        Aut harum ullam alias dolorum vero.
-      </h1>
-    </div>
+  <div *ngSwitchCase="Breakpoints.Medium">
+    <h1>MEDIANO</h1>
   </div>
-  <!-- Noticias -->
-  <!-- <h2 class="titleSection">Noticas</h2>
-  <hr class="yellowLine" />
-  <div class="containerNews">
-    <app-thumbnail></app-thumbnail>
-    <app-thumbnail></app-thumbnail>
-    <app-thumbnail></app-thumbnail>
-  </div> -->
-
-  <!-- Sección media -->
-  <!-- Noticias -->
-  <!-- <div class="midSection">
-    <div class="techNews">
-      <h2 class="titleSection">Lo último del área</h2>
-      <hr class="yellowLine" />
-      <div class="containerTechNews">
-        <app-thumbnail></app-thumbnail>
-        <app-thumbnail></app-thumbnail>
-        <app-thumbnail></app-thumbnail>
-        <app-thumbnail></app-thumbnail>
-      </div>
-    </div> -->
-
-  <!-- Clubes -->
-  <!-- <div class="clubs">
-      <h2 class="titleSection">Nuestros clubes</h2>
-      <hr class="yellowLine" />
-      <div class="clubSection">
-        <img src="https://via.placeholder.com/200x200" alt="" />
-        <div class="clubSectionText">
-          <h3>CSI</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illum
-            dolorum hic quis aperiam
-          </p>
-        </div>
-      </div>
-      <div class="clubSection">
-        <img src="https://via.placeholder.com/200x200" alt="" />
-        <div class="clubSectionText">
-          <h3>CSI</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illum
-            dolorum hic quis aperiam
-          </p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- Sección inferior -->
-  <!-- <div class="lowerSection">
-    <h2 class="titleSection">No sé jaja</h2>
-    <hr class="yellowLine" />
-    <div class="containerNews">
-      <app-thumbnail></app-thumbnail>
-      <app-thumbnail></app-thumbnail>
-      <app-thumbnail></app-thumbnail>
-    </div>
-  </div> -->
+  <div *ngSwitchCase="Breakpoints.XSmall">
+    <h1>SHIQUITO</h1>
+  </div>
 </div>
