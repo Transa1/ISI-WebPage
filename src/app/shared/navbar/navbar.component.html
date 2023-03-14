@@ -1,14 +1,17 @@
-<nav class="fixed-top navbar-expand-lg" >
+<nav class="fixed-top navbar-expand-md" >
+
   <div [class.isNavbarScrolled]="isNavbarScrolled">
+    <!--//menu de los logos-->
     <div class="primario-menu">
       <a class="navbar-logo" href="https://www.unison.mx/">
         <img src="/assets/unilogo.png" class="img-uni" >
+      </a>    
+
         <a class="navbar-logo" href="#home">
           <img src="/assets/isiisiisi.jpg" class="img-isi" >
-        </a>    
-      </a>
-     
-  
+        </a>
+      </div>  
+  <!--menu de las pestanias de la pag-->
       <div class="navbar-menu">
         <div  id="nav">
               <ul class="navbar-menu">
@@ -25,11 +28,9 @@
                     <a class="nav-link active" href="#general">General</a>
                   </li>
               </ul>
-              
-        </div>  
-      </div>    
+        </div>    
     </div>
-
+<!--//menu de input para buscar-->
     <div class="secundario-menu">
       <form class="nosubmit">
         <input class="nosubmit" placeholder="Buscar" >
