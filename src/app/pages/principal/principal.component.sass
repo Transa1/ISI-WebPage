@@ -1,7 +1,3 @@
-// Variable del alto del banner y las imagenes
-$banner_height: 15em
-
-
 // Generales
 #divitionBanner
     width: 100%
@@ -18,111 +14,30 @@ $banner_height: 15em
     background-color: yellow
     margin-bottom: 1em
 
-// Banner
-#contentSlider
-    width: 100%
-    height: $banner_height
-    background-color: red
-    overflow: hidden
-
-    #slider
-        width: 100%
-        display: grid
-        grid-template-columns: 100% 100% 100%
-        animation: move 15s infinite    
-    #img1
-        width: 100%
-        height:  $banner_height
-        background-image: url(https://as2.ftcdn.net/v2/jpg/04/16/85/49/1000_F_416854970_2hlz9mkmiVwEXJlilqHIo2kp7RvcD2A6.jpg)
-        background-size: cover
-        background-position: center
-    #img3
-        width: 100%
-        height:  $banner_height
-        background-image: url(https://as2.ftcdn.net/v2/jpg/04/16/85/49/1000_F_416854970_2hlz9mkmiVwEXJlilqHIo2kp7RvcD2A6.jpg)
-        background-size: cover
-        background-position: center
-    #img2
-        width: 100%
-        height:  $banner_height
-        background-image: url(https://as2.ftcdn.net/v2/jpg/04/16/85/49/1000_F_416854970_2hlz9mkmiVwEXJlilqHIo2kp7RvcD2A6.jpg)
-        background-size: cover
-        background-position: center
-
-    @keyframes move
-        30%
-            margin-left: 0%
-        33%
-            margin-left: -100%
-        63%
-            margin-left: -100%
-        66%
-            margin-left: -200%
-        97%
-            margin-left: -200%
-        100%
-            margin-left: 0%
-
 // Sección de la noticia
-.bigImgSection
-    display: grid
-    grid-template-columns: 40% 1fr
-    margin-top: 1em
-
-    img
-        max-width: 100%
-        max-height: 100%
-
-    #midSectionText
-        padding: 0.5em 1em
+.imgbigContainer
+    width: 100%
+    height: 500px
+    background-color: black
 
 // Sección clubes y
 .midSection
     display: grid
-    grid-template-columns: 40% 1fr
+    grid-template-columns: repeat(3, 1fr)
+    align-content: start
 
-    .clubes
-        display: grid
-        gap: 1em
+    .imgContainer
+        width: 400px
+        height: 400px
+        background-color: black
 
-        .clubSection
-            display: grid
-            gap: 1em    
-            grid-template-columns: 1fr 70%
-
-.aSection
-    margin-left: 1em
-// .clubes
-    // display: grid
-    // grid-template-columns: repeat(2, 1fr)
-
-    
-
-
-    // #bigImg
-    //     height: 30em
-    //     width: 30em
-
-        // img
-        //     max-width: 100%
-        //     max-height: 100%
-
-// .containerNews
-//     display: grid
-//     grid-template-columns: 1fr 1fr 1fr
-
-// .midSection
-//     display: grid
-//     grid-template-columns: 65% 1fr
-
-// .containerTechNews
-//     display: grid
-//     grid-template-columns: 1fr 1fr
-
-// .clubSection
-//     display: grid
-//     grid-template-columns: 45% 1fr
-//     margin-top: 1em
-
-//     p
-//         margin-top: 0.5em
+    .imgclubContainer
+        width: 100%
+        height: 190px
+        background-color: black
+        margin-bottom: 1em
+        
+    .imgfaqContainer
+        width: 100%
+        height: 6.25rem
+        background-color: black
