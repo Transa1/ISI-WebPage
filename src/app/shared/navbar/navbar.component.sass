@@ -1,60 +1,54 @@
 nav
-    overflow: hidden
     position: fixed
-    top: 0
-    left:0
-    margin-top:0
-    width: 100%
-    padding:0.5em
+    margin:0em
+    padding: 0em
+    padding-right:1em
+    width:100%
     display: flexs
-    justify-content: space-between
-    border: none
     height: auto
-    flex-direction: row
+    align-items: center
     background-color: #ffffff
-    object-fit: contain
     transition-timing-function:ease-in
     transition: all 0.5s
+ 
 
-div
-  img
-    cursor: pointer
-    margin-top:0.2em
-    object-fit: contain
-
-  img.img-isi
-    height:2.6em
-    width:2.6em
-
-  img.img-uni
-    height:3.1em
-    width:2.78em
-    
 nav
-  div 
-    object-fit: contain
-    margin-top:0.1em
+  img
+    overflow:hidden
+    display: inline-block
+    width: 2em
+
+div 
+    justify-content: space-between
     display: flex
     flex-direction: row
-    justify-content: space-between
+    margin:0em
+    padding: 0em
+    height: 5em
     align-items: center
     transition: text-decoration margin-right 0.7s
+
+div.primario-menu
+    margin:1em
+div.secundario-menu
+    margin:1em
+
 nav
   div.isNavbarScrolled
+      justify-content: space-between
       transition: all 0.2s ease-in
       margin:0em
-      object-fit: contain
       padding: 0em
-      height: 2em
+      height:3em
       width:100%
-      background-color: transparent
+      background-color: white
+
+  div.isNavbarScrolled a
+      color:#000000
 
 input 
   height: 1.5em
   padding-center: 1.5em
-
-  input[type=search]:focus 
-    border: 3px solid rgb(0, 63, 136)
 
 form 
     border: none
@@ -70,31 +64,32 @@ input.nosubmit
   background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='12' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 1em center
   background-position: 10px 6px
 
+  input:focus 
+    border: 3px solid #003f88
+
 nav
   ul
     display: inline-block //alineados en fila
     list-style: none  
     margin: 0em //margen y luego padding 
     padding: 0em  //
-    text-align: center
     background-color: transparent
     width: 100%
     float: right
     font: Verdana,Roboto, "Helvetica Neue", sans-serif
-  ul:isNavbarScrolled
-    color: #000000
+    
   li
-    margin: 0.5em
+    margin: 1em
     display: inline-block
-    padding: 0
+    padding: 0em
+    
 
   a
-    display: inline-block
     color: #000000
     padding: 1em 2em
     text-decoration: none
-    font-size: 0.7em
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-size: 0.8em
+    font-family: Ubuntu,Roboto, Geneva, Tahoma, sans-serif
   
   a:hover
     text-decoration: underline 
