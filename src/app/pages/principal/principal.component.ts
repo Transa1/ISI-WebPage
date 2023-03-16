@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { distinctUntilChanged, tap } from 'rxjs';
 
 @Component({
   selector: 'app-principal',
@@ -7,18 +8,40 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   styleUrls: ['./principal.component.sass'],
 })
 export class PrincipalComponent implements OnInit {
-  constructor(private responsive: BreakpointObserver) {}
+  Breakpoints = Breakpoints;
+  currentBreakpoint: string = '';
 
+  readonly breakpoint$ = this.breakpointObserver
+    .observe([
+      Breakpoints.XSmall,
+      Breakpoints.Medium,
+      Breakpoints.Large,
+      Breakpoints.XLarge,
+    ])
+    .pipe(
+      tap((value) => console.log(value)),
+      distinctUntilChanged()
+    );
+
+  constructor(public breakpointObserver: BreakpointObserver) {}
   ngOnInit(): void {
-    this.responsive
-      .observe([Breakpoints.WebLandscape, Breakpoints.HandsetPortrait])
-      .subscribe((result) => {
-        const breakpoints = result.breakpoints;
-        if (breakpoints[Breakpoints.WebLandscape]) {
-          console.log('screens matches WebLandscape');
-        } else if (breakpoints[Breakpoints.HandsetPortrait]) {
-          console.log('screens matches HandsetPortrait');
-        }
-      });
+    this.breakpoint$.subscribe(() => this.breakpointChanged());
+  }
+  private breakpointChanged() {
+    if (this.breakpointObserver.isMatched(Breakpoints.XSmall)) {
+      this.currentBreakpoint = Breakpoints.XSmall;
+      console.log('sm');
+    }
+    if (this.breakpointObserver.isMatched(Breakpoints.Medium)) {
+      this.currentBreakpoint = Breakpoints.Medium;
+      console.log('med');
+    }
+    if (
+      this.breakpointObserver.isMatched(Breakpoints.Large) ||
+      this.breakpointObserver.isMatched(Breakpoints.XLarge)
+    ) {
+      this.currentBreakpoint = Breakpoints.Large;
+      console.log('large');
+    }
   }
 }
