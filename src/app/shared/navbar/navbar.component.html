@@ -1,39 +1,35 @@
 <nav class="fixed-top navbar-expand-lg" >
+
   <div [class.isNavbarScrolled]="isNavbarScrolled">
+  <!--//menu del logo uni-->
     <div class="primario-menu">
       <a class="navbar-logo" href="https://www.unison.mx/">
-        <img src="/assets/unilogo.png" class="img-uni" >
-        <a class="navbar-logo" href="#home">
-          <img src="/assets/isiisiisi.jpg" class="img-isi" >
-        </a>    
-      </a>
-     
-  
+        <img src="/assets/universidad.png" class="img-uni" >
+      </a>    
+      </div>  
+  <!--menu de las pestanias de la pag-->
       <div class="navbar-menu">
-        <div  id="nav">
-              <ul class="navbar-menu">
-                  <li class="nav">
-                    <a class="nav-link active" href="#noticias">Noticias</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#alumnos">Alumnos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#maestros">Maestros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#general">General</a>
-                  </li>
-              </ul>
-              
-        </div>  
-      </div>    
-    </div>
+       <!--<input type="checkbox"  class="openSidebarMenu" id="openSidebarMenu">--> 
+          <label for="openSidebarMenu" class="sidebarIconToggle">
+              <div class="spinner diagonal part-1"></div>
+              <div class="spinner horizontal"></div>
+              <div class="spinner diagonal part-2"></div>
+          </label>
 
+          <div id="sidebarMenu" class="navbar-menu">
+              <li class="main-content-wrapper">
+                <a class="nav-link active" href="#noticias">Noticias</a>  
+                <a class="nav-link active" href="#alumnos">Alumnos</a>
+                <a class="nav-link active" href="#maestros">Maestros</a>
+                <a class="nav-link active" href="#general">General</a>
+              </li>
+            </div>   
+        </div>
+  <!--//menu del logo isi-->
     <div class="secundario-menu">
-      <form class="nosubmit">
-        <input class="nosubmit" placeholder="Buscar" >
-      </form>
+      <a class="navbar-logo" href="#home">
+        <img src="/assets/isiisiisi.png" class="img-isi" >
+      </a>
     </div>
   </div>
 </nav>
