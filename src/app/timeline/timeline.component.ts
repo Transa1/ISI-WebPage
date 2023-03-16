@@ -13,11 +13,14 @@ export class TimelineComponent implements OnInit {
 
   ngOnInit(): void {
     const timelineWrapper = this.elementRef.nativeElement.querySelector('.timeline-wrapper');
-    const timelineContentItems = timelineWrapper.querySelectorAll('.timeline-content-item > span');
+    const timelineContentItems = this.renderer.selectRootElement('.timeline-content-item > span',true);
     
     timelineContentItems.forEach(timelineContentItem => {
       this.renderer.listen(timelineContentItem, 'mouseenter', () => {
+
+
         const activeTimelineContentItem = timelineWrapper.querySelector('.timeline-content-item.active');
+        console.log(timelineWrapper)
         if (activeTimelineContentItem) {
           this.renderer.removeClass(activeTimelineContentItem, 'active');
         }

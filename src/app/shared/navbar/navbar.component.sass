@@ -10,13 +10,22 @@ nav
     background-color: #ffffff
     transition-timing-function:ease-in
     transition: all 0.5s
- 
 
 nav
   img
-    overflow:hidden
+    overflow: hidden
     display: inline-block
-    width: 2em
+    width: 2.8em
+    object-fit: cover
+
+  img:hover 
+    width: 3em
+    
+  .isNavbarScrolled img
+    width:2em
+
+  .isNavbarScrolled img:hover
+    width: 2.2em
 
 div 
     justify-content: space-between
@@ -31,9 +40,14 @@ div
 div.primario-menu
     margin:1em
 div.secundario-menu
-    margin:1em
+    margin:0em
+div.navbar-menu
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
 
-nav
+nav  
   div.isNavbarScrolled
       justify-content: space-between
       transition: all 0.2s ease-in
@@ -45,27 +59,7 @@ nav
 
   div.isNavbarScrolled a
       color:#000000
-
-input 
-  height: 1.5em
-  padding-center: 1.5em
-
-form 
-    border: none
-    padding: 0
-    font-size: 6px
-    cursor: default
-
-input.nosubmit 
-  border: 1px solid #555
-  width: 100%
-  font-size: 3em
-  padding: 9px 4px 9px 40px
-  background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='12' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 1em center
-  background-position: 10px 6px
-
-  input:focus 
-    border: 3px solid #003f88
+  
 
 nav
   ul
@@ -75,7 +69,7 @@ nav
     padding: 0em  //
     background-color: transparent
     width: 100%
-    float: right
+    float: left
     font: Verdana,Roboto, "Helvetica Neue", sans-serif
     
   li
@@ -83,7 +77,6 @@ nav
     display: inline-block
     padding: 0em
     
-
   a
     color: #000000
     padding: 1em 2em
