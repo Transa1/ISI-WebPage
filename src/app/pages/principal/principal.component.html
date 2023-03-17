@@ -1,0 +1,80 @@
+<!-- <hr id="divitionBanner" /> -->
+
+<ngcontainer [ngSwitch]="currentBreakpoint">
+  <div class="container" *ngSwitchCase="Breakpoints.Large">
+    <div>
+      <h2 class="title">Ultimas noticias</h2>
+      <hr class="yellowLine" />
+      <div class="imgbigContainer">
+        <img
+          src="https://www.elsoldehermosillo.com.mx/policiaca/54zlmr-unison-universidad-de-sonora/ALTERNATES/LANDSCAPE_1140/unison%20universidad%20de%20Sonora"
+          alt=""
+        />
+        <div>
+          <h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
+            maxime recusandae nemo, ex nisi esse, totam placeat officiis beatae,
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="midSection">
+      <div>
+        <h2 class="title">Maestros</h2>
+        <hr class="yellowLine" />
+        <div class="imgContainer">
+          <img
+            src="https://st.focusedcollection.com/13735766/i/1800/focused_299504168-stock-photo-university-professor-muscular-dystrophy-teaching.jpg"
+            alt=""
+          />
+          <div><h2>lorem</h2></div>
+        </div>
+      </div>
+      <div>
+        <h2 class="title">Historia</h2>
+        <hr class="yellowLine" />
+        <div class="imgContainer">
+          <img
+            src="https://st.focusedcollection.com/13735766/i/1800/focused_299504168-stock-photo-university-professor-muscular-dystrophy-teaching.jpg"
+            alt=""
+          />
+          <div><h2>lorem</h2></div>
+        </div>
+      </div>
+      <div id="clubesfaqSection">
+        <h2 class="title">Nuestros clubes</h2>
+        <hr class="yellowLine" />
+        <div class="gridClub">
+          <div class="imgclubContainer">
+            <img
+              src="https://media.licdn.com/dms/image/C560BAQG4BGLiDK9b1w/company-logo_200_200/0/1677787041915?e=2147483647&v=beta&t=EniM5aovZkLffwCJCsj3M-H9WlS1ey1PXI5-XYQK_Ww"
+              alt=""
+            />
+            <div>
+              <h2>CSI</h2>
+              <p>lorem lorem lorem lorem</p>
+            </div>
+          </div>
+          <div class="imgclubContainer">
+            <img
+              src="https://media.licdn.com/dms/image/C5603AQHh8rtsOrfiqA/profile-displayphoto-shrink_800_800/0/1517623223582?e=2147483647&v=beta&t=icMctGEoXReg5b0ucgLzghn53iZ1U4z5r7agj4HGZyw"
+              alt=""
+            />
+            <div>
+              <h2>CSI</h2>
+              <p>lorem lorem lorem lorem</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="Breakpoints.Medium">
+    <h1>MEDIANO</h1>
+  </div>
+  <div *ngSwitchCase="Breakpoints.XSmall">
+    <h1>SHIQUITO</h1>
+  </div>
+</ngcontainer>

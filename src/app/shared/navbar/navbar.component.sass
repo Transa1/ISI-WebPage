@@ -1,0 +1,91 @@
+nav
+    position: fixed
+    margin:0em
+    padding: 0em
+    padding-right:1em
+    width:100%
+    display: flexs
+    height: auto
+    align-items: center
+    background-color: #ffffff
+    transition-timing-function:ease-in
+    transition: all 0.5s
+
+nav
+  img
+    overflow: hidden
+    display: inline-block
+    width: 2.8em
+    object-fit: cover
+
+  img:hover 
+    width: 3em
+    
+  .isNavbarScrolled img
+    width:2em
+
+  .isNavbarScrolled img:hover
+    width: 2.2em
+
+div 
+    justify-content: space-between
+    display: flex
+    flex-direction: row
+    margin:0em
+    padding: 0em
+    height: 5em
+    align-items: center
+    transition: text-decoration margin-right 0.7s
+
+div.primario-menu
+    margin:1em
+div.secundario-menu
+    margin:0em
+div.navbar-menu
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+nav  
+  div.isNavbarScrolled
+      justify-content: space-between
+      transition: all 0.2s ease-in
+      margin:0em
+      padding: 0em
+      height:3em
+      width:100%
+      background-color: white
+
+  div.isNavbarScrolled a
+      color:#000000
+  
+
+nav
+  ul
+    display: inline-block //alineados en fila
+    list-style: none  
+    margin: 0em //margen y luego padding 
+    padding: 0em  //
+    background-color: transparent
+    width: 100%
+    float: left
+    font: Verdana,Roboto, "Helvetica Neue", sans-serif
+    
+  li
+    margin: 1em
+    display: inline-block
+    padding: 0em
+    
+  a
+    color: #000000
+    padding: 1em 2em
+    text-decoration: none
+    font-size: 0.8em
+    font-family: Ubuntu,Roboto, Geneva, Tahoma, sans-serif
+  
+  a:hover
+    text-decoration: underline 
+    text-decoration-color: rgb(0, 63, 136)
+    -moz-text-decoration-color: rgb(0, 63, 136)
+    text-decoration-thickness: 5px

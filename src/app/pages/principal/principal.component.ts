@@ -1,32 +1,13 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { distinctUntilChanged, tap } from 'rxjs';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.sass']
+  selector: 'app-principal',
+  templateUrl: './principal.component.html',
+  styleUrls: ['./principal.component.sass'],
 })
-
-
-export class NavbarComponent implements OnInit{
-  
-  printMsg() {
-    console.log('Icon Clicked');
-  }
-  isNavbarScrolled = false ;
-
-  @HostListener('window:scroll', [])
-  onWindowScroll = () => {
-    console.log(document.documentElement.scrollTop);
-    
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-     this.isNavbarScrolled=true;
-    } else {
-      this.isNavbarScrolled= false;
-    }
-
-  }
+export class PrincipalComponent implements OnInit {
   Breakpoints = Breakpoints;
   currentBreakpoint: string = '';
 

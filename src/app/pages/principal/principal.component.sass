@@ -1,0 +1,90 @@
+// Generales
+#divitionBanner
+    width: 100%
+    height: 1em
+    background-color: yellow
+    margin: 0
+
+.title
+    margin-top: 1em
+
+.yellowLine
+    width: 16rem
+    height: 0.5em
+    background-color: yellow
+    margin-bottom: 1em
+
+// Sección de la noticia
+.imgbigContainer
+    width: 100%
+    height: 500px
+    background-color: black
+    overflow: hidden
+    // Posicionamiento de la imagen
+    display: flex
+    position: relative
+    align-items: center
+    justify-content: center
+
+    img
+        width: 100%
+        height: auto
+        position: absolute
+
+    div
+        width: 100%
+        height: 20%
+        position: absolute
+        background-color: #000000c9
+        bottom: 0
+        text-align: center
+
+    h2
+        color: white
+
+// Sección clubes y
+.midSection
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    align-content: start
+
+    .imgContainer
+        width: 22em
+        height: 25em
+        background-color: black
+        overflow: hidden
+        // Posicionamiento de la imagen
+        display: flex
+        position: relative
+        align-items: center
+        justify-content: center
+        img
+            // width: 100%
+            height: 100%
+            position: absolute
+
+        div
+            width: 100%
+            height: 20%
+            position: absolute
+            background-color: #000000c9
+            bottom: 0
+            text-align: center
+
+        h2
+            color: white
+
+    .gridClub
+        display: grid
+        gap: 2em
+    .imgclubContainer
+        width: 100%
+        height: 9.5em
+        // background-color: black
+        // margin-bottom: 1em
+        // border: 1px solid #000
+        display: grid
+        grid-template-columns: 40% 1fr
+
+        img
+            width: 100%
