@@ -1,42 +1,172 @@
+/*
+    This .sass file controls the style of the footer in the following type of devices:
+    Large devices (min width 1280px)
+    Medium devices (min width 960px && max width 1279.98px)
+    Small devices (min width 600px && max width 959.98px)
+    Extra small devices (max width 599.98px)
+    Breakpoints have been applied to the device orientation (portrait or landscape)
+
+
+//Large Devices
 #footer
     background-color: #fdc500
-    padding: 2% 15% 3% 15%
-    position: relative
-.row
-    content: ""
-    display: table
-    clear: both
-    margin: 0 auto
-.col-33
-    float: left
-    width: 29%
-    padding: 1rem
-    margin: 1rem
-.footer-title
+    padding: 4% 7.5% 5% 7.5%
+.container-lg
+    background-color: #fdc500
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: stretch
+.column-lg
+    flex: 1 0 27%
+    margin: 0 3%
+.footer-title-lg
     margin-bottom: 0rem
     font-size: 1rem
     font-weight: 500
-.blue-footer-strip
+.blue-footer-strip-lg
     width: 100%
     height: 0.5em
     background-color: #00296b
     border: none
     margin: 0.4rem 0 0.4rem 0
-a:link 
+a:link
     text-decoration: none
     color: #000000
 a:visited
     color: inherit
-.footer-list
+.footer-list-lg
     font-family: Ubuntu
     margin-left: 1.5rem
     font-size: 1rem
     font-weight: 400
-.socials
+.socials-lg
     margin-top: 0rem
     margin-left: 1.2rem
     border-right: 1rem 
-.fb-tw
+.fb-tw-lg
     width: 10%
     margin: 0.3rem 0.4rem 0 0
-    
+
+//Medium devices
+.container-md
+    background-color: #fdc500
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: stretch
+.column-md
+    flex: 1 0 25%
+    margin: 0 3%
+.footer-title-md
+    margin-bottom: 0rem
+    font-size: 0.9rem
+    font-weight: 500
+.blue-footer-strip-md
+    width: 100%
+    height: 0.5em
+    background-color: #00296b
+    border: none
+    margin: 0.4rem 0 0.4rem 0
+a:link
+    text-decoration: none
+    color: #000000
+a:visited
+    color: inherit
+.footer-list-md
+    font-family: Ubuntu
+    margin-left: 1.5rem
+    font-size: 1rem
+    font-weight: 400
+.lis-elements-md
+    font-family: Ubuntu
+    font-size: 0.9rem
+    font-weight: 400
+.socials-md
+    margin-top: 0rem
+    margin-left: 1.2rem
+    border-right: 1rem 
+.fb-tw-md
+    width: 10%
+    margin: 0.3rem 0.4rem 0 0
+
+//Small devices
+.container-sm
+    background-color: #fdc500
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: stretch
+.column-sm
+    flex: 1 0 25%
+    margin: 0 2%
+.footer-title-sm
+    margin-bottom: 0rem
+    font-size: 0.9rem
+    font-weight: 500
+.blue-footer-strip-sm
+    width: 100%
+    height: 0.5em
+    background-color: #00296b
+    border: none
+    margin: 0.4rem 0 0.4rem 0
+a:link
+    text-decoration: none
+    color: #000000
+a:visited
+    color: inherit
+.footer-list-sm
+    font-family: Ubuntu
+    margin-left: 1rem
+    font-size: 1rem
+    font-weight: 400
+.lis-elements-sm
+    font-family: Ubuntu
+    font-size: 0.8rem
+    font-weight: 400
+.socials-sm
+    margin-top: 0rem
+    margin-left: 1.2rem
+    border-right: 1rem 
+.fb-tw-sm
+    width: 10%
+    margin: 0.3rem 0.4rem 0 0
+
+//Extra small devices
+.container-xsm
+    background-color: #fdc500
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: stretch
+.column-xsm
+    flex: 1 0 100%
+    width: auto
+    margin: 0 1% 5%
+.footer-title-xsm
+    margin-bottom: 0rem
+    font-size: 1rem
+    font-weight: 500
+.blue-footer-strip-xsm
+    width: 100%
+    height: 0.5em
+    background-color: #00296b
+    border: none
+    margin: 0.4rem 0 0.4rem 0
+a:link
+    text-decoration: none
+    color: #000000
+a:visited
+    color: inherit
+.footer-list-xsm
+    font-family: Ubuntu
+    margin-left: 1.5rem
+    font-size: 1rem
+    font-weight: 400
+.socials-xsm
+    margin-top: 0rem
+    margin-left: 1.2rem
+    border-right: 1rem 
+.fb-tw-xsm
+    width: 5%
+    margin: 0.3rem 0.4rem 0 0
